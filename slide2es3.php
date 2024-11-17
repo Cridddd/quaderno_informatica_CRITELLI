@@ -22,25 +22,27 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 $numero = $_POST['numero'];
 
-echo'<table border="1">';
-for($i=1; $i<=$numero; $i++){
-    echo "<tr>$i";
-    
+echo "<h2>Tabella dei Quadrati e Cubi fino a $numero</h2>";
+echo "<table border=1>";
+echo "<tr><td>Numero</td><td>Quadrato</td><td>Cubo</td></tr>";
 
-        for ($j = 1; $j <= 1; $j++) {
-             $m = $numero * $numero;
-             echo "<td>$m</td>";
-     
-     for ($n = 1; $n <= 1; $n++) {
-        $l = $numero * $numero * $numero;
-        echo "<td>$l</td>";
-    }
+for ($i = 1; $i <= $numero; $i++) {
+    $quadrato = $i * $i;
+    $cubo = $i * $i * $i;
+    echo "<tr><td>$i</td><td>$quadrato</td><td>$cubo</td></tr>";
 }
-    }
-    echo "</tr>";
 }
-    
+echo "</table>";
     ?>
+
+
+
+<h2>spiegazione codice</h2>
+<h3>Inizio il codice creando un form, contenente i numeri da 1 a 7
+    poi utilizzando il metodo if($_SERVER['REQUEST_METHOD'] == 'POST'), recupero il nuero inserito dall'utente
+    a quel punto creo la tabella. infine creo un ciclo for che mi permette di riempire le celle create dalla tabella con 
+    cubi e quadrati fino al numero scelto dall'utente.
+</h3>
 
 
 <a href="index.html">

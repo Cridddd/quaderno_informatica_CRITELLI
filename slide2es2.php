@@ -33,19 +33,22 @@
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-// Il form è stato inviato
+
 $nome = $_POST['username'];
 $password = $_POST['password'];
-// Verifica se il nome e la password corrispondono a quelli presenti nel database
+
 if ($nome=="admin" && $password=='123') {
-// Le credenziali sono corrette, autentica l'utente
-echo "<h4>Benvenuto $nome <br/>Nell'area riservata del sito!</h4>";
+
+echo "<h4>Benvenuto $nome Nell'area riservata del sito!</h4>";
 } else {
-// Le credenziali sono errate, mostra un messaggio di errore
+
 echo "<h4>Attenzione! Nome utente o password sbagliate</h4>";
 }
 }
 ?>
+
+
+<h2>CREDENZIALI: username: admin password:123</h2>
 
 <h2>Spiegazione codice</h2>
 <h3>Questo esercizio è praticamente uguale a quello precedente. 

@@ -31,7 +31,7 @@ per concludere ho messo 3 if, che danno 3 output diversi in base all'orario in c
 <h3>home</h3>
 </a>
 
-<a href="slide1">
+<a href="slide1.html">
     <h3>selettore esercizio</h3>
 </a>
 </html>

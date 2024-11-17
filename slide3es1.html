@@ -1,0 +1,94 @@
+<html>
+
+            <h1>Registrazione Utente</h1>
+            <form action="visualizza_dati.php" method="POST" id="userForm">
+                
+                
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required pattern="[A-Za-z ]+" title="Il nome deve contenere solo lettere e spazi.">
+               <br> 
+
+                
+                <label for="cognome">Cognome:</label>
+                <input type="text" id="cognome" name="cognome" required pattern="[A-Za-zàèìòùÀÈÌÒÙ']+" title="Il cognome deve contenere solo lettere, spazi e apostrofi.">
+                <br>
+
+                
+                <label for="data_nascita">Data di nascita:</label>
+                <input type="date" id="data_nascita" name="data_nascita" required>
+                <br>
+
+               
+                <label for="codice_fiscale">Codice Fiscale (opzionale):</label>
+                <input type="text" id="codice_fiscale" name="codice_fiscale" pattern="[A-Z0-9]{16}" title="Il codice fiscale deve essere composto da 16 caratteri alfanumerici.">
+                <br>
+
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+               
+                <label for="cellulare">Cellulare (con prefisso), opzionale:</label>
+                <input type="tel" id="cellulare" name="cellulare" pattern="\+39\d{10}" title="Il numero di cellulare deve essere formato dal prefisso +39 seguito da 10 cifre.">
+                <br>
+
+                
+                <label for="via">Via/Piazza:</label>
+                <input type="text" id="via" name="via" required>
+                <br>
+
+                <label for="cap">CAP:</label>
+                <input type="text" id="cap" name="cap" required maxlength="5" title="Il CAP deve essere formato da 5 cifre numeriche.">
+                <br>
+
+                <label for="comune">Comune:</label>
+                <input type="text" id="comune" name="comune" required>
+                <br>
+
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="provincia" name="provincia" required>
+                <br>
+
+                
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname" required>
+                <br>
+
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required >
+    
+                <button type="submit">Registrati</button>
+            </form>
+        
+
+
+        <h2>spiegazione codice</h2> 
+        <h3>creo i form che contengono tutti i dati, e inserisco i parametri che l'utente deve seguire per inserire i dati.
+            (ad esempio, nel nome ho inserito che l'utente non può mettere numeri).<br>
+            poi passo i valori al php, che si occupa di mostrarli a schermo.
+        </h3>   
+  
+        <a href="index.html">
+            <h3>home</h3>
+            </a>
+            
+            <a href="slide3.html">
+                <h3>selettore esercizio</h3>
+            </a>
+            </html>
+
+
+
+
+    </html>
+    
+    
+
+
+
+
+
+

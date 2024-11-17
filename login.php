@@ -12,7 +12,7 @@ if ($usr != "admin" && $pwd != "passwd"){
 Accesso negato </h >
 <?php
 } else {
-echo "<h4>Benvenuto" . $usr . " </h4>";
+echo "<h4>Benvenuto " . $usr . " </h4>";
 }
 ?>
 </body>
