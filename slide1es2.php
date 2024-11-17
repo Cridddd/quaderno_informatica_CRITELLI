@@ -14,8 +14,19 @@ if ($ora >= 8 && $ora < 13) {
     echo "\nBuonanotte $nome, sono le ore $ora";
 }
 
-           
 ?>
+
+
+<h2>Spiegazione codice</h2> 
+<h3>Per completare questo programma ho iniziato creando la variabile nome. in seguito ho inizializzato la variabile
+ora, che a differenza della variabile today, mi restituisce solo l'ora, senza minuti e secondi. 
+per concludere ho messo 3 if, che danno 3 output diversi in base all'orario in cui viene visualizzata la pagina.
+</h3>
+
+
+
+
+
 <a href="index.html">
 <h3>home</h3>
 </a>

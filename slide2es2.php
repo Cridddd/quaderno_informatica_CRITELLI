@@ -47,6 +47,12 @@ echo "<h4>Attenzione! Nome utente o password sbagliate</h4>";
 }
 ?>
 
+<h2>Spiegazione codice</h2>
+<h3>Questo esercizio è praticamente uguale a quello precedente. 
+L'unica cosa che cambia è che la verifica dei dati inserita viene fatta nello stesso file, tramite l'utilizzo del comando
+if ($_SERVER['REQUEST_METHOD'] == 'POST')  
+</h3>
+
 
 <a href="index.html">
 <h3>home</h3>

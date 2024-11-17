@@ -19,17 +19,21 @@
 <input name="submit" type= "submit" value="invia" />
 
 
+<h2>Spiegazione codice</h2>
+<h3>in questa pagina viene visualizzato un form, dove viene richiesto di effettuare il login in per raggiungere una pagina riservata.
+Questa pagina è collegata a un'altra pagina, chiamata login.php. In questa sono contenute le credenziali corrette e la verifica di queste ultime.
+</h3>
 
 
 
 
 
 </form>
-<a href="index.html">
+<a href="QUADERNO_INFORMATICA_CRITELLI/index.html">
 <h3>home</h3>
 </a>
 
-<a href="slide2.html">
+<a href="QUADERNO_INFORMATICA_CRITELLI/slide2.html">
     <h3>selettore esercizio</h3>
 </a>
 
