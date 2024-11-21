@@ -1,8 +1,8 @@
 <html>
 
 
-<form method = 'POST'>
-<label for="numero">inserisci un numero:</label>
+<form method = 'POST'>  <!-- passo i dati al server-->
+<label for="numero">inserisci un numero:</label>  <!-- creo il selettore di numeri -->
 <input type="number" id="numero" name="numero" list="numero-list">
 <datalist id="numero-list">
 <option value="1">
@@ -14,19 +14,19 @@
 <option value="7">
 
 </datalist>
-<input name="submit" type= "submit" value="invia" />
+<input name="submit" type= "submit" value="invia" />  <!-- tasto submit -->
 </form>
 
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
+if($_SERVER['REQUEST_METHOD'] == 'POST'){ //recupero i dati inseriti
 
-$numero = $_POST['numero'];
+$numero = $_POST['numero'];  //assegno a una variabile il numero inserito 
 
 echo "<h2>Tabella dei Quadrati e Cubi fino a $numero</h2>";
-echo "<table border=1>";
+echo "<table border=1>";  //creo la tabella 
 echo "<tr><td>Numero</td><td>Quadrato</td><td>Cubo</td></tr>";
 
-for ($i = 1; $i <= $numero; $i++) {
+for ($i = 1; $i <= $numero; $i++) {  //for per creare e riempire le celle
     $quadrato = $i * $i;
     $cubo = $i * $i * $i;
     echo "<tr><td>$i</td><td>$quadrato</td><td>$cubo</td></tr>";
@@ -37,12 +37,6 @@ echo "</table>";
 
 
 
-<h2>spiegazione codice</h2>
-<h3>Inizio il codice creando un form, contenente i numeri da 1 a 7
-    poi utilizzando il metodo if($_SERVER['REQUEST_METHOD'] == 'POST'), recupero il nuero inserito dall'utente
-    a quel punto creo la tabella. infine creo un ciclo for che mi permette di riempire le celle create dalla tabella con 
-    cubi e quadrati fino al numero scelto dall'utente.
-</h3>
 
 
 <a href="index.html">

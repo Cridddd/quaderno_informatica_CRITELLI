@@ -1,30 +1,26 @@
-<html>
-<body>
+
+
 
 
 <h3>Accesso a pagina riservata</h3>
 
-<form method = 'POST'>
+<!-- creazione dei form per il login-->
 
+<form action="login.php" method="post">
 
-
+<!-- inizializzo il form dove andrà inserito l'username -->
 <label for="username" ><b>Username</b></label>
 <input type="text" name="username" placeholder="Inserisci il nome utente" /><br />
 
-
+<!-- inizializzo il form dove andrà inserita la password-->
 <label for="password"><b>Password</b></label>
 <input type="password" name="password" placeholder="Inserisci la password" /><br />
 
 
-
+<!-- bottone per inviare i dati -->
 <input name="submit" type= "submit" value="invia" />
 
-
 </form>
-
-
-</body>
-
 
 
 
@@ -32,17 +28,17 @@
 
 
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {  //recupero credenziali dal form
 
 $nome = $_POST['username'];
 $password = $_POST['password'];
 
-if ($nome=="admin" && $password=='123') {
+if ($nome=="admin" && $password=='123') {  //controllo credenziali
 
-echo "<h4>Benvenuto $nome Nell'area riservata del sito!</h4>";
+echo "<h4>Benvenuto $nome Nell'area riservata del sito!</h4>";  //messaggio di benvenuto
 } else {
 
-echo "<h4>Attenzione! Nome utente o password sbagliate</h4>";
+echo "<h4>Attenzione! Nome utente o password sbagliate</h4>";  //messaggio di errore
 }
 }
 ?>
@@ -50,11 +46,7 @@ echo "<h4>Attenzione! Nome utente o password sbagliate</h4>";
 
 <h2>CREDENZIALI: username: admin password:123</h2>
 
-<h2>Spiegazione codice</h2>
-<h3>Questo esercizio è praticamente uguale a quello precedente. 
-L'unica cosa che cambia è che la verifica dei dati inserita viene fatta nello stesso file, tramite l'utilizzo del comando
-if ($_SERVER['REQUEST_METHOD'] == 'POST')  
-</h3>
+
 
 
 <a href="index.html">

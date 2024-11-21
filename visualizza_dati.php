@@ -1,6 +1,8 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {  //prelevo dal form i dati inseriti
  
+
+    //assegno a delle variabili i dati inseriti 
     $nome = $_POST['nome'];
     $cognome = $_POST['cognome'];
     $data_nascita = $_POST['data_nascita'];
@@ -14,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nickname = $_POST['nickname'];
     $password = $_POST['password'];
 
- 
+ //stampo i dati inseriti 
     echo "<h1>Dati inseriti:</h1>";
     echo "<p>Nome: $nome</p>";
     echo "<p>Cognome: $cognome</p>";

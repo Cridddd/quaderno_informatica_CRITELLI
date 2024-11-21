@@ -1,12 +1,12 @@
-<html>
-<?php 
-echo'<table border="1">';
 
-for($i=1; $i<11; $i++){
+<?php 
+echo'<table border="1">'; //creo la tabbella e ci aggiungo un bordo 
+
+for($i=1; $i<11; $i++){   //ciclo for che crea le celle 
     echo "<tr>";
-        for ($j = 1; $j <= 10; $j++) {
-             $m = $i * $j;
-             echo "<td>$m</td>";
+        for ($j = 1; $j <= 10; $j++) { //ciclo for che aggiunge i valori nelle celle 
+             $m = $i * $j;             
+             echo "<td>$m</td>";  //inserisco i valori moltiplicati nelle celle 
      }
     echo "</tr>";
 }
@@ -14,12 +14,6 @@ echo"</table>";
 ?>
 
 
-<h2>Spiegazione codice </h2>
-<h3>in questo programma si crea una tavola pitagorica.
-per farlo viene inizializzato un ciclo for, con al suo interno una riga di codice che permette di generare celle in colonna.
-Questo ciclo for contiene al suo interno un'altro ciclo for che genera le celle della tabella in riga.
-per effettuare il calcolo dei numeri viene moltiplicato al contatore del primo ciclo for, il contatore del secondo ciclo for.    
-</h3>
 
 
 
@@ -33,4 +27,3 @@ per effettuare il calcolo dei numeri viene moltiplicato al contatore del primo c
 </a>
 
 
-</html>
